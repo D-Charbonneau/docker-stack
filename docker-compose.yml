@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  myapp:
+    image: dallin-app:latest
+    ports:
+      - 3000:8080
+    deploy:
+      replicas: 3
+  myapp2:
+    image: dallin-app:latest
+    ports:
+      - 3001:8080
+    deploy:
+      replicas: 2
